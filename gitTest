@@ -1,0 +1,19 @@
+// algortmo BUBLE SORT length 0-6
+    int[] vetor = {79, 77, 65, 69, 77, 85, 79}; // Vetor de inteiros
+    for (int i = 0; i < vetor.length - 2; i++) { // loop externo AZUL nunca involver a letra i
+    // 6 ate 0
+      for (int j = vetor.length - 1; j > i; j--) { // loop interno VERDE
+        //Troca dos valores de vetor[i] e vetor[j]
+        //[69] <  [85]
+        if(vetor[j] < vetor[j-1]){
+          int temp = vetor[j];   // Armazena o valor de vetor[i] na variável temp
+            vetor[j] = vetor[j-1]; // Coloca o valor de vetor[j] em vetor[i]
+            vetor [j-1]=temp;
+        }
+      }
+    }
+      for(int i = 0 ;i< vetor.length;i++){
+        System.out.print("["+vetor[i]+"]");
+    }
+  }
+}
